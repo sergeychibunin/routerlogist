@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testapp</title>
+</head>
+<body>
+{% if mac_list %}
+    <ul>
+    {% for a in mac_list %}
+        <li><a href="{% url 'testapp:detail' a.id %}">{{ a.address }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No mac-addresses are available.</p>
+{% endif %}
+</body>
+</html>

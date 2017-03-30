@@ -6,5 +6,5 @@ class Mac(models.Model):
     log_date = models.DateTimeField('origin date')
 
     def __str__(self):
-    	return self.address
+        return self.address
 
